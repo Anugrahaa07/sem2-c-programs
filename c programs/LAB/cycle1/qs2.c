@@ -44,13 +44,13 @@ int Average(int a, int b, int c)
     avg = (a + b + c) / 3.0;
     A = (avg >= 50) ? 1 : 0;   // Conditional operator
 
-    printf("Average = %.2f\n", avg);
+    printf("Average = %f\n", avg);
     return A;
 }
 
 int main()
 {
-    int m1, m2, m3;
+    int m1, m2, m3,avg;
     int largest, smallest, A;
 
     printf("Enter marks of three subjects: ");
@@ -62,7 +62,7 @@ int main()
 
     printf("Largest mark = %d\n", largest);
     printf("Smallest mark = %d\n", smallest);
-    printf("The average is = %d\n", A);
+    printf("The average is = %d\n", avg);
 
     return 0;
 }

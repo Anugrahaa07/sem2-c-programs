@@ -1,68 +1,77 @@
 #include <stdio.h>
 #include <math.h>
-#define diff 0.00001
 
-long factorial(int n)
+#define DIFF 0.00001
+
+int factorial(int n)
 {
-    long fact = 1;
+    int f = 1;
     for(int i = 1; i <= n; i++)
-    {
-        fact = fact * i;
-    }
-    return fact;
+        f = f * i;
+    return f;
 }
 
 double Sin(double x)
 {
-    double term, sum = 0, prev;
+    double sum = 0, term;
     int i = 1, sign = 1;
 
-    do
+    while(1)
     {
-        prev = sum;
-        term = pow(x, i) / factorial(i);
-        sum = sum + sign * term;
+        term = sign * pow(x, i) / factorial(i);
+        sum = sum + term;
+
+        if(term < 0)
+            term = -term;
+
+        if(term < DIFF)
+            break;
 
         sign = -sign;
         i = i + 2;
-
-    } while(fabs(sum - prev) >= diff);
+    }
 
     return sum;
 }
 
 double Cos(double x)
 {
-    double term, sum = 1, prev;
+    double sum = 1, term;
     int i = 2, sign = -1;
 
-    do
+    while(1)
     {
-        prev = sum;
-        term = pow(x, i) / factorial(i);
-        sum = sum + sign * term;
+        term = sign * pow(x, i) / factorial(i);
+        sum = sum + term;
+
+        if(term < 0)
+            term = -term;
+
+        if(term < DIFF)
+            break;
 
         sign = -sign;
         i = i + 2;
-
-    } while(fabs(sum - prev) >= diff);
+    }
 
     return sum;
 }
 
 double Sum()
 {
-    double sum = 1, prev, term;
+    double sum = 1, term;
     int n = 2;
 
-    do
+    while(1)
     {
-        prev = sum;
         term = pow((1.0/n), n);
         sum = sum + term;
-        n++;
 
-    } while(fabs(sum - prev) >= diff);
+        if(term < DIFF)
+            break;
+
+        n++;
+    }
 
     return sum;
 }
@@ -71,12 +80,12 @@ int main()
 {
     double x;
 
-    printf("Enter value of x (in radians): ");
+    printf("Enter x in radians: ");
     scanf("%lf", &x);
 
-    printf("\nSin(x) = %lf", Sin(x));
-    printf("\nCos(x) = %lf", Cos(x));
-    printf("\nSeries Sum = %lf", Sum());
+    printf("Sin(x) = %lf\n", Sin(x));
+    printf("Cos(x) = %lf\n", Cos(x));
+    printf("Series Sum = %lf\n", Sum());
 
     return 0;
 }

@@ -42,7 +42,7 @@ int Average(int a, int b, int c)
     int A;
 
     avg = (a + b + c) / 3.0;
-    A = (avg >= 50) ? 1 : 0;   // Conditional operator
+    A = (avg >= 50) ? 1 : 0;   
 
     printf("Average = %f\n", avg);
     return A;

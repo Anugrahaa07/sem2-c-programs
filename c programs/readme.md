@@ -33,7 +33,7 @@
 
 <img width="1404" height="936" alt="Screenshot 2026-02-04 185412" src="https://github.com/user-attachments/assets/f7ed3973-1ca0-4552-8644-b4d394020957" />
 <img width="1141" height="939" alt="Screenshot 2026-02-04 184752" src="https://github.com/user-attachments/assets/d9bff9fb-cf89-4831-84b1-4cf31ea37fe0" />
-output for calculator using function:
+q.output for calculator using function:
 Enter which program you want to perform:
 1.Addition
 2.Subtraction
@@ -90,3 +90,6 @@ Please try againEnter which program you want to perform:
 5
 Thank You!
 Exiting the program
+q.output of recursive factorial
+Enter the number to find the factorial of: 5
+The factorial is 120

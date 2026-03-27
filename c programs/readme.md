@@ -33,3 +33,60 @@
 
 <img width="1404" height="936" alt="Screenshot 2026-02-04 185412" src="https://github.com/user-attachments/assets/f7ed3973-1ca0-4552-8644-b4d394020957" />
 <img width="1141" height="939" alt="Screenshot 2026-02-04 184752" src="https://github.com/user-attachments/assets/d9bff9fb-cf89-4831-84b1-4cf31ea37fe0" />
+output for calculator using function:
+Enter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+1
+Enter 2 numbers :
+2 3
+The sum is 5
+Enter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+2
+Enter 2 numbers :
+3 1
+The difference is 2
+Enter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+3
+Enter 2 numbers :
+3 4
+The product is 12
+Enter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+4
+Enter 2 numbers :
+1.0 2.0
+The quotient is 0.500000
+Enter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+6
+Please try againEnter which program you want to perform:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+5
+Thank You!
+Exiting the program

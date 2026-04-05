@@ -93,3 +93,10 @@ Exiting the program
 q.output of recursive factorial
 Enter the number to find the factorial of: 5
 The factorial is 120
+<img width="1205" height="809" alt="Screenshot 2026-04-06 045621" src="https://github.com/user-attachments/assets/ae4ba940-533c-4c97-8051-cf43e7a0ac80" />
+<img width="1057" height="209" alt="Screenshot 2026-04-06 045434" src="https://github.com/user-attachments/assets/716e2351-a802-4538-a735-d59d338366b1" />
+<img width="848" height="342" alt="Screenshot 2026-04-06 050545" src="https://github.com/user-attachments/assets/3656df2d-0ece-46e5-bb30-3233321bedd5" />
+<img width="759" height="51" alt="Screenshot 2026-04-06 050057" src="https://github.com/user-attachments/assets/14e17346-1bae-4da1-bbd1-3cc8ee55cca3" />
+<img width="999" height="320" alt="Screenshot 2026-04-06 045812" src="https://github.com/user-attachments/assets/10c248fc-556f-4ede-bd82-7eb1b1e4869f" />
+<img width="979" height="288" alt="Screenshot 2026-04-06 045009" src="https://github.com/user-attachments/assets/5673b2d5-05af-4fd0-8235-305832b9926f" />
+

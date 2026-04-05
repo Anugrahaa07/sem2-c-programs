@@ -1,19 +1,22 @@
+//Anugraha Anil
+//Register Number - 25102811
+//Department of Computer Science(DCS)
 #include <stdio.h>
 
 int Largest(int a, int b, int c)
 {
     int largest;
 
-    if (a > b)
+    if (a >= b)
     {
-        if (a > c)
+        if (a >= c)
             largest = a;
         else
             largest = c;
     }
     else
     {
-        if (b > c)
+        if (b >= c)
             largest = b;
         else
             largest = c;
@@ -26,9 +29,9 @@ int Smallest(int a, int b, int c)
 {
     int smallest;
 
-    if (a < b && a < c)
+    if (a <= b && a <= c)
         smallest = a;
-    else if (b < c)
+    else if (b <= c)
         smallest = b;
     else
         smallest = c;

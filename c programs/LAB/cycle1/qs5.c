@@ -1,3 +1,6 @@
+//Anugraha Anil
+//Register Number - 25102811
+//Department of Computer Science(DCS)
 #include <stdio.h>
 #include <string.h>
 

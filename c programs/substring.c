@@ -2,23 +2,26 @@
 
 int main() {
     char str[100], sub[100];
-    int n, i = 0, j = 0;
+    int pos, len, i = 0;
 
     printf("Enter string: ");
-    gets(str);
+    scanf("%s", str); // Using %s is safer than gets()
 
     printf("Enter starting position: ");
-    scanf("%d", &n);
+    scanf("%d", &pos);
+    
+    printf("Enter length to extract: ");
+    scanf("%d", &len);
 
-    while(str[n-1 + i] != '\0') {
-        sub[j] = str[n-1 + i];
+    // We start from pos-1 because array indexing starts at 0
+    while (i < len && str[pos - 1 + i] != '\0') {
+        sub[i] = str[pos - 1 + i];
         i++;
-        j++;
     }
 
-    sub[j] = '\0';
+    sub[i] = '\0'; 
 
-    printf("Extracted string = %s", sub);
+    printf("Extracted string = %s\n", sub);
 
     return 0;
 }

@@ -21,9 +21,9 @@ int main()
     int n=5,i;
     sortarray(a,n);
     printf("The Sorted array is: ");
-    for(i=0,i<n,i++)
+    for(i=0;i<n;i++)
     {
-        printf("%d",a[i]);
+        printf("%d\t",a[i]);
     }
     return 0;
 }

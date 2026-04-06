@@ -1,24 +1,23 @@
-#include<stdio.h>
-int fib(int a,int b,int c,int n)
-{
-    int d=0,e=1,f,i;
-    while(i>0)
-    {
-        f=d+e;
-        printf("%d",f);
-        d=e;
-        e=f;
-        i--;
-        return f;
+#include <stdio.h>
+
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n; // Base case: returns 0 for 0 and 1 for 1
     }
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
-int main()
-{
-    int d=0,e=1,f,i;
-    printf("How much terms do you want: ");
-    scanf("%d",&i);
-    printf("The fibonocci series");
-    printf("%d\t%d",d,e);
-    printf("\t%d",fib(d,e,f,i));
+
+int main() {
+    int terms, i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &terms);
+
+    printf("Fibonacci Series: ");
+    for (i = 0; i < terms; i++) {
+        printf("%d ", fibonacci(i));
+    }
+    printf("\n");
+
     return 0;
 }
